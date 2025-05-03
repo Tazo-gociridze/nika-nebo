@@ -9,11 +9,14 @@ const HeaderNav = () => {
 
   return (
     <nav className="hidden gap-x-10 text-[19px] text-white sm:hidden lg:flex">
-      <NavLink to="/" className={isActiveLink('/') ? 'text-blue-300' : 'hover:text-blue-300'}>
+      <NavLink to="/" className={isActiveLink('/') ? 'text-[#ff9646]' : 'hover:text-[#ff9646]'}>
         მთავარი
       </NavLink>
-      <NavLink to="/tours" className={isActiveLink('/tours') ? 'text-blue-300' : 'hover:text-blue-300'}>
-          ავეჯი
+      <NavLink
+        to="/tours"
+        className={isActiveLink('/tours') ? 'text-[#ff9646]' : 'hover:text-[#ff9646]'}
+      >
+        ავეჯი
       </NavLink>
     </nav>
   );

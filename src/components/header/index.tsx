@@ -8,7 +8,7 @@ const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full bg-[#0A2C00] py-5 transition-colors duration-500 dark:bg-[#161616]">
+    <header className="fixed left-0 top-0 z-50 w-full bg-[#591E11] py-5 transition-colors duration-500 dark:bg-[#161616]">
       <div className="relative m-auto flex w-full items-center justify-between px-3 sm:px-3 xl:px-6 2xl:px-32">
         <HeaderLogo setIsMenuActive={setIsMenuActive} />
         <HeaderNav />

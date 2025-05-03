@@ -14,7 +14,7 @@ const HomeMainSectionText = () => {
       </h1>
       <p className="mb-10 text-lg text-[white]">{t('home-introduction-text')}</p>
       <Link to={'tours'}>
-        <Button>{t('view-other-tours-btn')}</Button>
+        <Button>ავეჯის ნახვა</Button>
       </Link>
     </div>
   );
