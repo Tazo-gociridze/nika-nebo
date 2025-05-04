@@ -5,8 +5,6 @@ export interface TourData {
   title: string;
   description: string;
   price: number;
-  start_date: Date;
-  end_date: Date;
   image_url?: string | undefined;
   created_at: string;
 }
@@ -19,7 +17,7 @@ export const getTours = async (
 ): Promise<{ data: TourData[]; nextPage: number | null }> => {
   try {
     let query = supabase
-      .from('tours')
+      .from('aveji')
       .select('*', { count: 'exact' })
       .range(pageParam, pageParam + pageSize - 1);
 

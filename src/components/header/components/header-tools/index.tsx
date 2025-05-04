@@ -1,12 +1,12 @@
-import Button from '@/utils/Button/Button';
+// import Button from '@/utils/Button/Button';
 import { ChangeLangAndThemeContainerStyles, ChangeThemeStyles } from '../../header.styles';
 import HeaderChangeLang from '../header-change-lang';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import useHeaderToolsLogic from '../../hooks/header-tools-logic';
 import { FiMenu } from 'react-icons/fi';
 import { IoClose } from 'react-icons/io5';
 import { FC } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 interface HeaderToolsProps {
   isMenuActive: boolean;
@@ -14,8 +14,9 @@ interface HeaderToolsProps {
 }
 
 const HeaderTools: FC<HeaderToolsProps> = ({ isMenuActive, setIsMenuActive }) => {
-  const { user, themeIcon, changeTheme, t } = useHeaderToolsLogic();
-  const { t: Tprofile } = useTranslation('profile');
+    const { themeIcon, changeTheme,  } = useHeaderToolsLogic();
+  // const { user, themeIcon, changeTheme, t } = useHeaderToolsLogic();
+  // const { t: Tprofile } = useTranslation('profile');
   return (
     <div className={ChangeLangAndThemeContainerStyles()}>
       <HeaderChangeLang />
@@ -23,7 +24,7 @@ const HeaderTools: FC<HeaderToolsProps> = ({ isMenuActive, setIsMenuActive }) =>
         <span>{themeIcon}</span>
       </div>
 
-      <div className="hidden sm:block">
+      {/* <div className="hidden sm:block">
         {user ? (
           <Link to={'/profile'}>
             <Button>{Tprofile('profile')}</Button>
@@ -33,7 +34,7 @@ const HeaderTools: FC<HeaderToolsProps> = ({ isMenuActive, setIsMenuActive }) =>
             <Button>{t('headerLogin')}</Button>
           </Link>
         )}
-      </div>
+      </div> */}
 
       <div
         onClick={() => setIsMenuActive(!isMenuActive)}

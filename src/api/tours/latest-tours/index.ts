@@ -2,7 +2,7 @@ import { supabase } from '@/utils/supabaseClient';
 
 export const fetchLatestTours = async () => {
   const { data, error } = await supabase
-    .from('tours')
+    .from('aveji')
     .select('*')
     .order('created_at', { ascending: false })
     .limit(5);
