@@ -1,13 +1,12 @@
 import { TourData } from "@/api/tours/tours-data";
 import { cardMetaStyles } from "@/pages/tours/tours.styles";
-import { formatDate } from "@/utils/FormatDate/FormatDate";
 import { Card } from "antd";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 
 
 const TourCardDescription:FC<{ tour: TourData }>  = ({tour}) => {
-    const {id, title, description, start_date, end_date, price} = tour
+    const {id, title, description, price} = tour
   return (
     <Link to={`/tours/${id}`}>
     <Card.Meta
@@ -23,16 +22,7 @@ const TourCardDescription:FC<{ tour: TourData }>  = ({tour}) => {
           </p>
           <div className="mt-3">
             <p className="text-sm font-semibold text-yellow-500 sm:text-lg">{`Price: $${price}`}</p>
-            {start_date && (
-              <p className="text-[11px] text-gray-600 sm:text-lg dark:text-gray-400">
-                Start Date: {formatDate(start_date)}
-              </p>
-            )}
-            {end_date && (
-              <p className="mb-5 text-[11px] text-gray-600 sm:text-lg dark:text-gray-400">
-                End Date: {formatDate(end_date)}
-              </p>
-            )}
+
           </div>
         </div>
       }

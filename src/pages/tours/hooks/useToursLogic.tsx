@@ -66,10 +66,6 @@ const useToursLogic = () => {
         return a.price - b.price;
       }
 
-      if (sort === 'date') {
-        return new Date(a.start_date).getTime() - new Date(b.start_date).getTime();
-      }
-
       return 0;
     });
   return {
