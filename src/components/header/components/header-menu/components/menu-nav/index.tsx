@@ -6,25 +6,19 @@ import { Link } from 'react-router-dom';
 const MenuNav: FC<{ resetState: () => void }> = ({ resetState }) => {
   const { t } = useTranslation('header');
   return (
-    <div className="flex flex-col text-white *:flex *:w-full *:items-center *:justify-between *:bg-[#16330c] *:px-7 *:py-5 *:dark:bg-[#1a1919]">
-      <Link className="hover:bg-[#305e20] dark:hover:bg-[#312f2f]" onClick={resetState} to={'/'}>
+    <div className="flex flex-col text-white *:flex *:w-full *:items-center *:justify-between *:bg-[#591E11] *:px-7 *:py-5 *:dark:bg-[#1a1919]">
+      <Link className="hover:bg-[#8d44348c] dark:hover:bg-[#312f2f]" onClick={resetState} to={'/'}>
         <span>{t('navHome')}</span>
         <span className="text-[11px]">
           <FaCircle />
         </span>
       </Link>
       <Link
-        className="hover:bg-[#305e20] dark:hover:bg-[#312f2f]"
+        className="hover:bg-[#8d443483] dark:hover:bg-[#312f2f]"
         onClick={resetState}
-        to={'tours'}
+        to={'furniture'}
       >
-        <span>{t('navTours')}</span>
-        <span className="text-[11px]">
-          <FaCircle />
-        </span>
-      </Link>
-      <Link className="hover:bg-[#305e20] dark:hover:bg-[#312f2f]" onClick={resetState} to={'/agencies'}>
-        <span>{t('agencies')}</span>
+        <span>{t('navFurniture')}</span>
         <span className="text-[11px]">
           <FaCircle />
         </span>

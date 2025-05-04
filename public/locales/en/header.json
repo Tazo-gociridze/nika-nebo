@@ -1,6 +1,7 @@
 {
-  "navHome": "Home",
-  "navTours": "Tours",
+  "logo": "Nebo",
+  "navHome": "Main",
+  "navFurniture": "Furniture",
   "agencies": "Agencies",
 
   "headerLogin": "Login",

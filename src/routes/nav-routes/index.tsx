@@ -9,7 +9,7 @@ export type NavRouteType = RouteObject & {
   element: JSX.Element;
 };
 
-const { HOME, TOURS, PROFILE, TOUR_DETAILS, AGENSIES } = NavRoute;
+const { HOME, FURNITURE, PROFILE, FURNITURE_DETAILS, AGENSIES } = NavRoute;
 
 export const NAV_ROUTES: NavRouteType[] = [
   {
@@ -17,7 +17,7 @@ export const NAV_ROUTES: NavRouteType[] = [
     element: <Home />,
   },
   {
-    path: TOURS,
+    path: FURNITURE,
     element: <Tours />,
   },
   {
@@ -33,7 +33,7 @@ export const NAV_ROUTES: NavRouteType[] = [
     ),
   },
   {
-    path: TOUR_DETAILS,
+    path: FURNITURE_DETAILS,
     element: (
       <DelayedLoading delay={300}>
         <TourDetails />

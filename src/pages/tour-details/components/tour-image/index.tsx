@@ -12,7 +12,7 @@ const DetailsImage: FC<{ image_url: string | undefined }> = ({ image_url }) => {
         height={'100%'}
         style={{
           objectFit: 'cover',
-          borderRadius: '8px',
+          borderRadius: '0px',
           backgroundSize: 'cover',
         }}
       />

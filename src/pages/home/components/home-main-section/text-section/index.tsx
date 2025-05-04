@@ -13,7 +13,7 @@ const HomeMainSectionText = () => {
         />
       </h1>
       <p className="mb-10 text-lg text-[white]">{t('home-introduction-text')}</p>
-      <Link to={'tours'}>
+      <Link to={'furniture'}>
         <Button>ავეჯის ნახვა</Button>
       </Link>
     </div>

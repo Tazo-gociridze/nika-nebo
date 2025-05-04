@@ -1,7 +1,7 @@
 export enum NavRoute {
   HOME = '/',
-  TOURS = '/tours',
+  FURNITURE = '/furniture',
   AGENSIES = '/agencies',
   PROFILE = '/profile',
-  TOUR_DETAILS = '/tours/:tourId',
+  FURNITURE_DETAILS = '/furniture/:tourId',
 }

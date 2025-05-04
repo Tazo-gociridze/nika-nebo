@@ -29,7 +29,6 @@ const TourFilters = ({ handleSearch, handleSort }: TourFiltersLogicProps) => {
         <Select value={sort} onChange={handleSortChange} className={selectStyles()}>
           <Option value="none">{t('non-selected')}</Option>
           <Option value="price">{t('sort-by-price')}</Option>
-          <Option value="date">{t('sort-by-date')}</Option>
         </Select>
       </Col>
     </Row>

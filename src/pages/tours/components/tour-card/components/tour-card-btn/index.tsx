@@ -10,7 +10,7 @@ const TourCardBtn: FC<{ tour: TourData }> = ({tour}) => {
 
   return (
     <div className="mt-4 flex items-end justify-end">
-      <Link to={`/tours/${tour.id}`}>
+      <Link to={`/furniture/${tour.id}`}>
         <Button className={buttonStyles()}>{t('tour-view-more')}</Button>
       </Link>
     </div>

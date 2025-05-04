@@ -23,7 +23,7 @@ const ChangeLangWindow: FC<ChangeLangWindowProps> = ({
         <div className="absolute top-12 z-[9999] rounded-md bg-[#000000] text-sm shadow-md lg:text-[18px]">
           <div
             onClick={switchLangHandler}
-            className="flex cursor-pointer items-center gap-x-1 rounded-md bg-[#0f2708] px-3 py-2"
+            className="flex cursor-pointer items-center gap-x-1 rounded-md bg-[#591E11] px-3 py-2"
           >
             <span>{NOT_SELECTED_LANG}</span>
             <img

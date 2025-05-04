@@ -13,7 +13,7 @@ const {contentStyle, t} = useCarouselItemLogic({tour})
         <div className="bg-cover bg-center" style={contentStyle}>
           <div className="flex h-full w-full cursor-pointer items-center justify-center
            bg-[#00000057] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <Link to={`tours/${tour.id}`}>
+            <Link to={`furniture/${tour.id}`}>
               <Button className="text-bold bg-[#ffffff85] px-14 py-6 text-xl text-white">
                 {t('slider-btn')}
               </Button>
