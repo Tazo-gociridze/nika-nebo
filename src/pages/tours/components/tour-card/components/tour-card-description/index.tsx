@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const TourCardDescription:FC<{ tour: TourData }>  = ({tour}) => {
     const {id, title, description, price} = tour
   return (
-    <Link to={`/tours/${id}`}>
+    <Link to={`/furniture/${id}`}>
     <Card.Meta
       title={
         <h3 className="text-lg font-medium text-gray-800 sm:text-2xl sm:font-semibold dark:text-white">
